@@ -1,0 +1,25 @@
+# Never commit real credentials, keys, or database connection secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Local Python environments, including third-party MCP server checkout
+ashwani-travel-agent/
+venv/
+.venv/
+aviationstack-mcp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Output and local artifacts
+travel_plans/
+*.log
+.DS_Store
+.vscode/
+.idea/
